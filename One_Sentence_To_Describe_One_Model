@@ -11,3 +11,12 @@
 # ML: Bayes
 
 # PCA:
+
+# Ridge regression vs Lasso:
+## When do we desire l-1 and when do we desire l2: It dependes on the geometric shape.
+
+# Gradient descent:
+## Gradient is the derivative of a multivariate function
+
+# Jacobian Hessian
+## 1st-order 2nd-order derivative of a vector
