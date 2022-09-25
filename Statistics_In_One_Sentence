@@ -10,7 +10,7 @@ MGF is used to find the n-th order moment, by taking the n-th order derivative o
 # Normal distribution
 
 # Familiy of distribution
-
+Members of a distribution family have similar patterns, such as Skewenss-Kurtosis plots for Gamma, Neg-Gamma and Normal.
 
 # Regularization and how does it reduce overfitting
 
