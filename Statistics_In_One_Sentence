@@ -7,6 +7,11 @@ Moments are used to describe some characteristics of distributions
 # MGF
 MGF is used to find the n-th order moment, by taking the n-th order derivative of MGF at t=0, you get the n-th moment
 
+# Normal distribution
+
+# Familiy of distribution
+
+
 # Regularization and how does it reduce overfitting
 
 # Logistic Regression
