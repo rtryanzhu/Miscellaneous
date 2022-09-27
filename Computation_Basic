@@ -1,0 +1,9 @@
+# Decimal X to binary or other base
+X/2 = a
+(X/2)/2 = b
+(X/2)/2/2 = c
+X = cba in binary
+
+# ASCII
+
+# Two's complement
