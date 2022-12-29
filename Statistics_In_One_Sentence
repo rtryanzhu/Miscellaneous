@@ -77,6 +77,11 @@ L1 can perform feature reduction since the contour is likely to intersect the di
 L1 is robust to outliers because to reduce the sum of ABS, it requires as many 0s as possible so less important or irrelevant features will be 0s.
 
 # TSA: ARIMAX model
+AR: Regress on iteself
+MA: Regress on previous erros
+I: Order of difference to reach stationary
+CCF: Identify a proper lag of exogenous variable
+First construct a stationary model by ACF and PACF plots, then use CCF plots to investigate the lag of exogenous variables.
 
 # Gradient descent:
 ## Gradient is the derivative of a multivariate function
