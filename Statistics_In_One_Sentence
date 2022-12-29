@@ -22,19 +22,46 @@ Members of a distribution family have similar patterns, such as Skewenss-Kurtosi
 
 
 
-# Machine Learning
+# Machine Learning (ML)
 
 # ML: kNN
+Story: Teach a kid to identify pig with a variety of pictures.
+Find k nearest neighbors by distance (Eucledian distance is commonly used), decide the beloning by majority voting. k-NN is not good at high dimentional data because
+(1) More expensive to calculate distance and find the nearest neighbors (2) Similar cases may not be close because to cover 10% of space, we need larger cubic. (0.1*0.1
+to cover 10% in 2-D, 0.4^3 to cover 10% in 3-D)
+
+Hype parameters: (1) k is the only hype-para
 
 # ML: DT/RF
-Split rules: (1) Var reduction (2) Information gain (With entropy defined as \sum{pi log(pi)} (3) Gini Impurity (4) Chi-square
+Story: A bank approves a loan or not?
+DT is a collective decision making process. It consists of a series of judgements on variables/features (of course the order or the importance of features matters)
+instead of deciding yes or no simply.
+RF is a series of decision trees and each tree is made of a random subset of features. A final result is decided by average of results or majority voting. It's an
+example of ensemble learning.
+RF doesn't care about feature importance and it's suitable for large datasets. DT is faster and more easily to interpret the result.
+Hype parameters: (1) split criterion for spliting (2) max features for spliting (3) max depth (be careful with overfitting) (4) min samples for spliting / leaf
+generation (similarly, use too much data will result in overfitting)
 
-# ML: Bayes
+# ML: Naive Bayes algorithm 
+Story: Given the color, type and brand, classify whether the car is stolen
+It requires independence between features.
 
 # PCA:
 
-# Ridge regression vs Lasso:
-## When do we desire l-1 and when do we desire l2: It dependes on the geometric shape.
+# Parameter tuning methods:
+(1) grid search: HIW: Divide each domain of parameter into several parts and try the combinations
+(2) k-fold cross-validation: Story: Learn driving on different roads. HIW: Seperate the entire datasets into k parts and use 1 part each time as the testing set and 
+the rest as training set until every set is used for test.
+Variants: (i) startified k-fold CV: Rearrange data so that each subset is representative of the entire dataset. (ii) holdout CV: reserve one subset 
+Compared with simple training-testing split: The simple split results in high variance
+
+# Regularization: Ridge (L2) vs Lasso (L1)
+Prevent overfitting by involving a penalty term that increases with more data/features used.
+L1 uses l-1 norm (ABS) of coefficients and L2 uses squared of l-2 norm of coefficients
+Hype-para: lambda which scales the norm of coefficients.
+L1 vs L2: L1 creates sparsity (0s) since the shape of ABS is a diamond while the shape of Squared is a circle on 2-D space
+L1 can perform feature reduction since the contour is likely to intersect the diamond at axis while it usually doesn't cut a square on axis.
+L1 is robust to outliers because to reduce the sum of ABS, it requires as many 0s as possible so less important or irrelevant features will be 0s.
 
 # Gradient descent:
 ## Gradient is the derivative of a multivariate function
