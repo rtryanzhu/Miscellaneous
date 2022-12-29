@@ -24,13 +24,22 @@ Members of a distribution family have similar patterns, such as Skewenss-Kurtosi
 
 # Machine Learning (ML)
 
+# ML: Logistic regression. p = 1/(1+exp(-f(x)))
+Story: Predict the result of a binary event.
+Hype parameters: None
+
+# ML: SVM
+Story: Find a classifier (a line in 2-D or a plane in 3-D) that maximize the margins.
+Support vectors are samples close to the margin.
+Hype-paras: (1) kernel (project input) (2) penalty term
+
 # ML: kNN
 Story: Teach a kid to identify pig with a variety of pictures.
 Find k nearest neighbors by distance (Eucledian distance is commonly used), decide the beloning by majority voting. k-NN is not good at high dimentional data because
 (1) More expensive to calculate distance and find the nearest neighbors (2) Similar cases may not be close because to cover 10% of space, we need larger cubic. (0.1*0.1
 to cover 10% in 2-D, 0.4^3 to cover 10% in 3-D)
 
-Hype parameters: (1) k is the only hype-para
+Hype parameters: (1) k (2) measure of distance 
 
 # ML: DT/RF
 Story: A bank approves a loan or not?
@@ -45,6 +54,10 @@ generation (similarly, use too much data will result in overfitting)
 # ML: Naive Bayes algorithm 
 Story: Given the color, type and brand, classify whether the car is stolen
 It requires independence between features.
+
+# ML: Neural Network (NN) from tensorflow
+An NNW has 3 layers, input layer, hidden layer and output layer.
+It's more like a process of iteration of existing methods.
 
 # PCA:
 
@@ -62,6 +75,8 @@ Hype-para: lambda which scales the norm of coefficients.
 L1 vs L2: L1 creates sparsity (0s) since the shape of ABS is a diamond while the shape of Squared is a circle on 2-D space
 L1 can perform feature reduction since the contour is likely to intersect the diamond at axis while it usually doesn't cut a square on axis.
 L1 is robust to outliers because to reduce the sum of ABS, it requires as many 0s as possible so less important or irrelevant features will be 0s.
+
+# TSA: ARIMAX model
 
 # Gradient descent:
 ## Gradient is the derivative of a multivariate function
